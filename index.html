@@ -13,9 +13,27 @@
   <!-- Using bootstrap 5 framework-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
+
+    <!-- Navbar gets injected here -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Place Main Content here -->
+    <div class="container">
+        <h1>Web Page Template</h1>
+        <p>This is to help you create new webpages from this template</p>
+
+    </div>
+
+    <script>
+        $("#nav-placeholder").load("navbar.html");
+    </script>
+    <!-- Bootstrap JS must go last -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <div class="container p-5 my-5 bg-dark text-white">
   <h1>Hello, GitHub!</h1>
   <p>This is my first web page using version control with Git and GitHub. I forked a repository to create this. A fork
@@ -33,7 +51,7 @@
 
 </ul>
 
-<img src="Image/rumi feelin democratic.JPG" class="mx-auto d-block" class="container pt-5  alt="rumi as helldiver" width="300" height="400">
+<img src="Image/rumi feelin democratic.JPG" alt="Helldiver is calling" class="mx-auto d-block" class="container pt-5  alt="rumi as helldiver" width="300" height="400">
 
   <div class="d-flex justify-content-center align-items-center flex-column p-5 my-5 bg-dark text-white">
   <H2>Rumi Joined and so should you </H2>
